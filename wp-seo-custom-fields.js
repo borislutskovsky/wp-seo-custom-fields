@@ -1,6 +1,7 @@
 (function(){
 
   WP_SEO_AdvancedCustomFields_Analyzer = function(){
+    if(typeof(YoastSEO) == 'undefined') return;
     YoastSEO.app.registerPlugin('WP_SEO_AdvancedCustomFields_Analyzer', {status: 'ready'});
 
     /**
